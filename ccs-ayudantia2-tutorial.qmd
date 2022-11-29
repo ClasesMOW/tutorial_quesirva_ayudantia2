@@ -617,7 +617,7 @@ p3<-rawchart+
 p1/(p2+p3)
 
 # Export chart
-ggsave("fig1.png")
+ggsave("output/fig1.png")
 ```
 
 Estos tres gráficos nos muestran que los puntajes en las pruebas se correlacionan con características de los padres (ambos scatters) y que aquellos que asistieron a la escuela de verano tenían mejores puntajes incluso antes de ir a la escuela de verano y que las caraterísticas de los padres se relaciona con la asistencia al éste 
@@ -770,11 +770,11 @@ modelsummary::modelsummary(naive_ols_models, stars= TRUE, fmt=3,
 
 ```
 
-Sin embargo, si creemos que lo que también correlacona es una inobservable como la preocupación / involucramiento de los padres aun preservan el problema de la autoselección, todavía tenemos presencia de sesgo por variables omitidad.
+Sin embargo, si creemos que lo que también correlaciona es una inobservable como la preocupación / involucramiento de los padres aun preservan el problema de la autoselección, todavía tenemos presencia de sesgo por variables omitidad.
 
 ¿Qué hacer?
 
-Vamos a revisra varias alternativas: 
+Vamos a revisar varias alternativas: 
 
 - Experimental
 
@@ -958,9 +958,11 @@ stargazer( OLS_year5, Pooled_OLS, FE,
            dep.var.labels = ("Test score"),
            column.labels = c("Cross-Sectional OLS (year 5)", "Pooled OLS", "School FE"),
           covariate.labels = c("Intercept", "letter"),
-           keep =c("Intercept", "letter"),
+           keep =c("Constant", "letter"),
            omit.stat = "all", 
-           digits = 2, intercept.bottom = FALSE )
+           digits = 3, 
+          intercept.bottom = FALSE
+          )
 
 ```
 
