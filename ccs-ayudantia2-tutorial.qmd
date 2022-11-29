@@ -177,7 +177,9 @@ Una segunda alternativa es descargar y cargar los datos directamente en R desde 
 ```{r}
 #| eval: false
 
-#school_data_1 <- read.csv("https://github.com/ClasesMOW/ayudantiasccs/blob/main/data_raw/school_data_1.csv")
+#school_data_1 <- read.csv("https://raw.githubusercontent.com/ClasesMOW/tutorial_quesirva_ayudantia2/main/data_raw/school_data_1.csv")
+
+
 ```
 
 ### 1.3 Cargar datos STATA
