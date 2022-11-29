@@ -1,6 +1,6 @@
 # Tutorial ayudantía 2: Bienvenida al tutorial
 
-Hola, este tutorial está escrito como la actividad de aplicación de la ayudantía 2 del curso
+Hola, este tutorial está escrito como la actividad de aplicación de la ayudantía 2 del curso. La clase es el desarrollo de [este tutorial](https://rpubs.com/maoyarzun/974348)
 
 La idea es ir desarrollando el tutorial en paralelo a la sesión y que puedan tomar apuntes adicionales directamente en el notebook. Está escrito como .qmd, un notebook Quarto y puede ser editado en rstudio, vscode o cualquier otro IDE o editor de texto. El lenguaje utilizado para el procesamiento y análisis es R.
 
